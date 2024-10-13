@@ -93,14 +93,19 @@ section{
 }
 
 .moving-planet{
-    background: url(img/moving-planet.png);
+    background-image: url(img/moving-planet.png);
     background-repeat: no-repeat;
+    content: "";
     width: 200px;
     height: 230px;
     transform: rotate(-15deg);
     position: absolute;
     bottom: 30px;
     left: 30px;
+    animation-name: planet-move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 @keyframes planet-move {
@@ -108,12 +113,6 @@ section{
     to{transform: translateY(70px);}
 }
 
-.moving-planet{
-    animation-name: planet-move;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
 
 .title{
     padding-top: 100px;
@@ -124,13 +123,12 @@ section{
 }
 
 .about-content{
-    width: 35%;
-    height: 270px;
+    width: 45%;
+    height: 350px;
     padding-top: 40px;
     padding-left: 40px;
-    background-color: #792AFF;
-    position: relative;
     display: flex;
+    align-items: center;
 }
 
 .about-title{
@@ -140,18 +138,21 @@ section{
     max-width: 463px;
     margin-bottom: 20px;
     font-size: 'Comfortaa';
+    
+}
+
+.about-text{
+    background-color: #792AFF;
+    padding: 25px 0px;
+    padding-left: 15px;
 }
 
 .about-card{
     background-image: url(img/form2.png);
-    width: 376px;
-    height: 346px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    padding-bottom: 15px;
 }
 
 .about-card p{
@@ -161,8 +162,162 @@ section{
     padding-left: 20px;
     line-height: 25px;
     font-family: 'Comfortaa';
+    
 }
 
 .about-card img{
-    padding-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+
+.skills-card{
+    background-image: url(img/form3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 450px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding-left: 10px;
+}
+
+.skills-card p{
+    color: #000;
+    font-size: 18px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+    max-width: 500px;
+    font-family: 'Comfortaa';
+}
+
+.moving-planet2{
+    background: url(img/moving-planet2.png);
+    background-repeat: no-repeat;
+    width: 208px;
+    height: 200px;
+    transform: rotate(-15deg);
+    position: absolute;
+    bottom: 70px;
+    left: 0px;
+    animation-name: planet-move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.works-block img{
+    margin: 0 20px;
+    width: 27%;
+    box-shadow: 7px 7px 0 #000000;
+}
+
+.comments-block{
+    max-width: 1150px;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.comment-card{
+    background-image: url(img/card.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.comment-card h3{
+    font-family: 'Comfortaa';
+    font-size: 18px;
+    padding: 10px;
+}
+
+.comment-card p{
+    font-family: 'Comfortaa';
+    font-size: 14px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.comment{
+    background-image: url(img/comment.png);
+    background-repeat: no-repeat;
+    width: 327px;
+    height: 161px;
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.comment p{
+    font-family: 'Comfortaa';
+    font-size: 20px;
+    max-width: 250px;
+}
+
+.comment-card2{
+    background-image: url(img/card.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 300px;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.comment-card2 h3{
+    font-family: 'Comfortaa';
+    font-size: 18px;
+    padding: 10px;
+}
+
+.comment-card2 p{
+    font-family: 'Comfortaa';
+    font-size: 14px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.comment2{
+    background-image: url(img/comment.png);
+    background-repeat: no-repeat;
+    width: 327px;
+    height: 161px;
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.comment2 p{
+    font-family: 'Comfortaa';
+    font-size: 20px;
+    max-width: 250px;
+}
+
+footer{
+    background-color: #200153;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFF;
+}
+
+.footer-year p{
+    font-family: 'Comfortaa';
+    letter-spacing: 1.5px;
+}
+
+.footer-links a{
+    margin-right: 15px;
 }
