@@ -93,6 +93,32 @@ section{
     background: #a0d826;
 }
 
+.button1{
+    width: 200px;
+    height: 60px;
+    border-radius: 100px;
+    border: 2px solid #000;
+    background: #BBFF2C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 0 #000000;
+    margin-top: 20px;
+}
+
+.button1 a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.button1{
+    transition-duration: 0.3s;
+}
+
+.button1:hover{
+    background: #a0d826;
+}
+
 .moving-planet{
     background-image: url(img/moving-planet.png);
     background-repeat: no-repeat;
@@ -367,4 +393,137 @@ nav{
 
 .active{
     background-color: #BBFF2C;
+}
+
+@media (max-width: 1000px) {
+
+    .nav-links{
+        display: none;
+    }
+
+    .logo{
+        font-size: 40px;
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+
+    .button{
+        width: 150px;
+        height: 50px;
+    }
+
+
+    .main-content{
+        max-width: 320px;
+    }
+
+    .main-title{
+        padding-top: 30px;
+        font-size: 30px;
+    }
+
+    .main-subtitle{
+        font-size: 15px;
+    }
+
+    .moving-planet, .moving-cloud, .moving-planet2 {
+        display: none;
+    }
+
+    .title{
+        font-size: 50px;
+        padding-top: 30px;
+    }
+
+    .about-content{
+        flex-direction: row-reverse;
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .about-card{
+        order: -1;
+        background-size: cover;
+        padding-top: 10px;
+        width: 326px;
+        height: 296px;
+    }
+
+    .about-card img{
+        padding-top: 40px;
+        padding-bottom: 15px;
+        width: 300px
+    }
+
+    .about-content{
+        width: 75%;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .about-title{
+        font-size: 18px;
+    }
+
+
+    .skills-card{
+        margin: 90px;
+        padding-left: 10px;
+        background-size: contain;
+        height: 350px;
+    }
+
+    .skills-card p{
+        font-size: 16px;
+        margin-top: 15%;
+        margin-bottom: 20px;
+    }
+
+    .skills-section{
+        min-height: 60vh;
+    }
+
+    .skills-card .button1{
+        position: absolute;
+        bottom: 200px;
+    }
+
+    .button1{
+        height: 50px;
+    }
+
+
+    .works-block{
+        flex-direction: column;
+        padding: 20px 0px;
+    }
+
+    .works-block img{
+        margin: 20px 0px;
+        width: 80%;
+    }
+
+
+    .comments-block{
+        flex-direction: column;
+        align-items: center;
+        justify-content:flex-start;
+        margin: 0 auto;
+        padding: 30px;
+    }
+    
+    .comment{
+        background-image: url(img/comment-mobile.png);
+        background-size: contain;
+        height: 100px;
+        margin-top: 30px;
+        
+        
+    }
+
+    .comment p{
+        font-size: 15px;
+        max-width: 300px;
+        
+    }
 }
