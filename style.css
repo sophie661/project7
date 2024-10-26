@@ -395,10 +395,57 @@ nav{
     background-color: #BBFF2C;
 }
 
+.mobile-button{
+    display: none;
+    padding-top: 10px;
+    width: 40px;
+    position: absolute;
+    right: 20px;
+}
+
+.hide{
+    display: none;
+}
+
 @media (max-width: 1000px) {
+
+    .mobile-button{
+        display: block;
+        position: absolute;
+        z-index: 2;
+        right: 100px;
+    }
+
+    .mobile_menu{
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        background-color: #181336;
+        min-height: 100vh;
+    }
+
+    .mobile-nav{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-nav-links .nav-link{
+        margin-bottom: 30px;
+        width: 210px;
+        height: 50px;
+    }
 
     .nav-links{
         display: none;
+    }
+
+    .off-scroll{
+        overflow: hidden;
     }
 
     .logo{
@@ -518,7 +565,6 @@ nav{
         height: 100px;
         margin-top: 30px;
         
-        
     }
 
     .comment p{
@@ -526,4 +572,8 @@ nav{
         max-width: 300px;
         
     }
+
+
+    
+
 }
